@@ -1,5 +1,3 @@
-
-
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');
 window.addEventListener('scroll', _.throttle(function () {
@@ -134,6 +132,3 @@ spyEls.forEach(function(spyEl) {
 		.setClassToggle(spyEl, 'show')
 		.addTo(new ScrollMagic.Controller());
 });
-
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear(); // 2022 
